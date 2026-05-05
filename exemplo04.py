@@ -9,9 +9,12 @@ except (ValueError, TypeError):
     print('Informe um número. ')
 except ZeroDivisionError:
     print('Não pode ser número zero') 
+except KeyboardInterrupt:
+    print('Operação cancelado pelo usuário.')
 else:
     print(f'Média por funcionário {mépfuncio: .2f}')
-# Executa sempre    
+
+# Executa sempre. Com erro ou não, o bloco sempre irá executar
 finally:
     print('Programa encerrada!')
 
